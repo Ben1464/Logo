@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121214;
+}
+
+.hexagon {
+    width: 170px;
+    height: 98px;
+    background: linear-gradient(145deg, #00a8cc, #007799);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0, 168, 204, 0.6);
+    transition: all 0.3s ease;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+}
+
+.hexagon:before {
+    top: -42.5px;
+    border-bottom: 42.5px solid #00a8cc;
+}
+
+.hexagon:after {
+    bottom: -42.5px;
+    border-top: 42.5px solid #00a8cc;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.logo-text:hover {
+    color: #e5e5e5;
+}
